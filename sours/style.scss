@@ -1,0 +1,22 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Roboto&display=swap');
+
+// Base style
+@import './base/reset';
+@import './base/vas';
+@import './base/base';
+
+
+// Bloks
+@import './blocks/strip';
+@import './blocks/nav';
+@import './blocks/burger-menu';
+@import './blocks/header';
+@import './blocks/description';
+@import './blocks/collection';
+@import './blocks/essentials';
+@import './blocks/benefits';
+@import './blocks/specification';
+@import './blocks/cta';
+@import './blocks/moment';
+@import './blocks/footer';

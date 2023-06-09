@@ -1,0 +1,103 @@
+.description {
+    padding: 44px 0px;
+
+    @media (max-width:1024px) {
+        padding: 22px 0px 55px;
+    }
+
+    @media (max-width:425px) {
+        padding: 0;
+        padding-bottom: 30px;
+    }
+}
+
+
+.descriotion__wrapper {
+    p {
+        font-size: 57px;
+        line-height: 1.42;
+        text-align: center;
+
+        @media (max-width:1315px) {
+            font-size: 50px;
+        }
+
+        @media (max-width:1024px) {
+            font-size: 40px;
+        }
+
+        @media (max-width:768px) {
+            font-size: 28px;
+        }
+
+        @media (max-width:555px) {
+            font-size: 16px;
+        }
+
+        @media (max-width:322px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.descriotion__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 68px;
+    margin-top: 26px;
+
+    @media (max-width:768px) {
+        margin-top: 15px;
+    }
+
+    @media (max-width:425px) {
+        margin-top: 10px;
+    }
+}
+
+.descriotion__btn {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 1.6px;
+    position: relative;
+
+
+
+    a {
+        color: $accents-color;
+
+        @media (max-width:768px) {
+            font-size: 14px;
+        }
+
+        @media (max-width:425px) {
+            font-size: 12px;
+        }
+
+        @media (max-width:322px) {
+            font-size: 10px;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 23px;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background-color: $accents-color;
+        transform: scale(0);
+        transform-origin: left;
+        transition: all 0.2s ease-in;
+    }
+
+    &:hover::after {
+        transform: scale(1);
+    }
+
+}

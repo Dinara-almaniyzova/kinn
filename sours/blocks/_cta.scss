@@ -1,0 +1,99 @@
+.cta {
+    padding-top: 40px;
+}
+
+.cta__wrapper {
+    max-width: 1328px;
+    background-color: $acsent-bg;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 63px 0px;
+    text-align: center;
+
+    @media (max-width:1024px) {
+        padding: 50px 0px;
+    }
+
+    @media (max-width:425px) {
+        padding: 40px 0px;
+    }
+}
+
+.cta__title {
+    margin-bottom: 16px;
+    font-size: 28px;
+    line-height: 1.39;
+
+    @media (max-width:1024px) {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    @media (max-width:425px) {
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+}
+
+.cta__text {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 31px;
+
+    @media (max-width:1024px) {
+        margin-bottom: 17px;
+        font-size: 15px;
+    }
+
+    @media (max-width:425px) {
+        margin-bottom: 14px;
+        font-size: 14px;
+    }
+}
+
+.form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form__input {
+    border-bottom: 1px solid $accents-color;
+    margin-right: 16px;
+
+    @media (max-width:375px) {
+        width: 150px;
+    }
+}
+
+.form__btn {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+    text-align: center;
+    color: $acsent-bg;
+    background-color: $accents-color;
+    padding: 0px 25px;
+    transition: all 0.2s ease-in;
+
+    @media (max-width:1024px) {
+        font-size: 14px;
+    }
+
+    @media (max-width:425px) {
+        font-size: 13px;
+        padding: 0px 20px;
+    }
+
+    @media (max-width:375px) {
+        font-size: 11px;
+        padding: 0px 15px;
+    }
+
+}
+
+.form__btn:active {
+    position: relative;
+    top: 3px;
+}
